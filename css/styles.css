@@ -26,6 +26,11 @@ body {
     left: -9999px;
 }
 
+section:not(.angle-bg),
+.scrim {
+    min-height: calc(100vh + 3rem);
+}
+
 /* Typography */
 
 h1 {
@@ -37,9 +42,14 @@ h1 {
 
 
 /* Hero Banner */
-
+section.hero {
+    background: url('../img/hero.webp') center / cover no-repeat;
+}
 
 /* Parallax */
+section.parallax {
+    background: url('../img/splash-mobile.webp') center / cover no-repeat fixed;
+}
 
 
 
