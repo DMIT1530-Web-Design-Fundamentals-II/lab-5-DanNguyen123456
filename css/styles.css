@@ -255,7 +255,7 @@ footer h3 {
     padding: 1rem;
 }
 
-.news div {
+.news .text {
     display: flex;
     justify-content: center;
 }
@@ -298,4 +298,47 @@ footer h3 {
     padding-top: 1rem;
 }
 
-@media screen and (min-width: 50rem) {}
+@media screen and (min-width: 50rem) {
+    .hero .inner-container {
+        justify-content: center;
+    }
+
+    .hero h3 {
+        text-align: center;
+    }
+
+    section.parallax {
+        background: url('../img/splash.webp') center / cover no-repeat fixed;
+    }
+
+    .parallax .scrim {
+        max-width: 50%;
+        margin-left: auto;
+        padding-top: 5rem;
+        padding-right: 12rem;
+        padding-bottom: 8rem;
+    }
+
+    .footer-menu {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .news {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .news h3 {
+        text-align: left;
+    }
+
+    .news p {
+        padding: 0;
+    }
+
+    .text {
+        max-height: 2rem;
+        margin-top: auto;
+    }
+}
