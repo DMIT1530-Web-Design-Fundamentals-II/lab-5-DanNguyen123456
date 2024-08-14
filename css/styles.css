@@ -31,14 +31,78 @@ section:not(.angle-bg),
     min-height: calc(100vh + 3rem);
 }
 
+.button {
+    background-color: var(--accent);
+    border-radius: .2rem;
+    padding: .5rem;
+    letter-spacing: 0.1rem;
+    color: var(--dark);
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: var(--hover);
+}
+
 /* Typography */
 
 h1 {
     font-family: 'Hurricane', cursive;
 }
 
-
 /* Header */
+header {
+    background-color: var(--pop);
+}
+
+header h1 {
+    color: var(--white);
+    text-align: center;
+    text-transform: lowercase;
+    font-size: 4rem;
+    line-height: 4rem;
+    font-weight: normal;
+}
+
+header h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: .8rem;
+    text-align: center;
+    color: var(--white);
+    letter-spacing: .3rem;
+}
+
+header .svg {
+    max-height: 2rem;
+}
+
+.menu-icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--white);
+    font-size: .8rem;
+}
+
+.topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0rem .5rem 0rem;
+}
+
+.account {
+    display: flex;
+}
+
+.signup {
+    padding: .5rem .2rem 0rem .8rem;
+    letter-spacing: 0.1rem;
+    color: var(--white);
+    text-decoration: none;
+}
 
 
 /* Hero Banner */
@@ -46,21 +110,192 @@ section.hero {
     background: url('../img/hero.webp') center / cover no-repeat;
 }
 
+.hero h2 {
+    color: var(--white);
+    font-size: 4rem;
+    font-weight: 100;
+}
+
+.hero p {
+    color: var(--white);
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.hero .inner-container>div {
+    display: flex;
+    justify-content: center;
+}
+
+.hero .button {
+    margin: 3rem 0rem 10rem 0rem;
+}
+
 /* Parallax */
 section.parallax {
     background: url('../img/splash-mobile.webp') center / cover no-repeat fixed;
 }
 
+.parallax .scrim {
+    max-width: 60%;
+    margin-left: auto;
+}
 
+.parallax h3 {
+    color: var(--dark);
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.parallax p {
+    color: var(--dark);
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 300;
+}
 
 /* Horizontal Scroll */
+section.scroll {
+    background-color: var(--white);
+}
 
+.scroll h2 {
+    text-transform: uppercase;
+    color: var(--dark);
+    font-size: 4rem;
+    font-weight: 100;
+    text-align: center;
+    margin: 5rem 0rem 5rem 0rem
+}
 
+.scroll-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 5rem;
+    overflow-x: scroll;
+}
+
+.card {
+    background-color: #ffffff;
+    border: 0px;
+    border-radius: 0.2rem;
+    flex: 0 0 24rem;
+    margin: 2rem 1rem;
+}
+
+.card img {
+    padding: 1rem;
+    border-radius: 0.2rem 0.2rem 0 0;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    padding: 0rem 1rem 1rem 1rem;
+    text-align: center;
+}
+
+.card-body h4 {
+    color: var(--pop);
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: .2rem;
+    font-size: .8rem;
+}
+
+.card-body h3 {
+    font-weight: 300;
+    font-size: 2rem;
+}
+
+.card-body p {
+    text-align: left;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* This is for webkit browsers only */
+.scroll-wrapper::-webkit-scrollbar {
+    background-color: --white;
+    width: 0.5rem;
+}
+
+.scroll-wrapper::-webkit-scrollbar-thumb {
+    border-radius: 2rem;
+    background-color: var(--accent);
+}
+
+/* As of 2022, this is for Firefox only */
+
+.scroll-wrapper {
+    scrollbar-color: var(--accent) var(--white);
+    scrollbar-width: thin;
+}
 
 /* Footer */
-
-
-
-@media screen and (min-width: 50rem) {
-
+footer {
+    background-color: var(--pop);
 }
+
+footer .inner-container {
+    padding: 1rem;
+}
+
+footer h3 {
+    font-weight: 300;
+    font-size: 1.5rem;
+    text-align: center;
+    color: var(--white);
+    text-transform: uppercase;
+}
+
+.news p {
+    color: var(--white);
+    padding: 1rem;
+}
+
+.news div {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-menu {
+    padding-top: 1rem;
+}
+
+.footer-menu a {
+    text-decoration: none;
+}
+
+.footer-menu>li>ul {
+    padding: 0;
+    list-style-type: none;
+    padding-bottom: 1rem;
+}
+
+.first-link {
+    color: var(--accent);
+    text-transform: uppercase;
+    font-size: 1.3rem;
+}
+
+.second-tier a {
+    color: var(--white);
+}
+
+.second-tier a:hover {
+    color: var(--hover);
+}
+
+.disclaimer {
+    color: var(--white);
+    text-align: center;
+    padding: 1rem;
+}
+
+.disclaimer p {
+    padding-top: 1rem;
+}
+
+@media screen and (min-width: 50rem) {}

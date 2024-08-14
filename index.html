@@ -29,15 +29,17 @@
 			<h2>Chocolate Couture</h2>
 			<nav class="topbar wide-flex">
 				<div class="menu-icon">
-					<img class="svg" src="/img/svg/menu.svg" alt="menu">
+					<img class="svg" src="/img/menu.svg" alt="menu">
 					<p>menu</p>
 				</div>
-				<a class="button" href="#">
-					<div>sign in</div>
-				</a>
-				<a class="button" href="#">
-					<div>sign up</div>
-				</a>
+				<div class="account">
+					<a class="button" href="#">
+						<div>sign in</div>
+					</a>
+					<a class="signup" href="#">
+						<div>sign up</div>
+					</a>
+				</div>
 			</nav>
 		</div>
 	</header>
@@ -46,12 +48,14 @@
 		<section class="hero">
 			<div class="scrim">
 				<div class="inner-container">
-					<h2>made by hand;<br /> made with love.</h2>
+					<h2><br /><br />made by hand;<br />⠀⠀made with<br />⠀⠀ love.</h2>
 					<p>Our mission is simple; we craft fine chocolate creations, each one lovingly made by hand, using
 						only the freshest ingredients and the finest Belgian chocolate.</p>
-					<a class="button" href="#">
-						<div>shop chocolates</div>
-					</a>
+					<div>
+						<a class="button" href="#">
+							<div>shop chocolates</div>
+						</a>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -81,15 +85,12 @@
 						Our mission is simple: to provide you with beautiful, flavorful chocolates that you can taste
 						the difference in. We hope you'll find something here for everyone on your list!
 					</p>
-					<a class="button" href="#">
-						<div>shop chocolates</div>
-					</a>
 				</div>
 			</div>
 		</section>
 
 		<!-- Horizontal Scroll Section -->
-		<section>
+		<section class="scroll">
 			<div class="inner-container">
 				<h2>Shop our favorites</h2>
 			</div> <!-- end of .inner-container -->
@@ -106,7 +107,7 @@
 							dessert-lovers.
 							Crafted from sustainable cocoa, eating these bars feels as good as it tastes.
 						</p>
-						<a href="#" class="btn">Shop bar chocolate</a>
+						<a href="#" class="button">Shop bar chocolate</a>
 					</div>
 				</div> <!-- end of .card -->
 
@@ -121,7 +122,7 @@
 							showcase a more pronounced real chocolate taste, without milk solids or excess sugar. Always
 							bold, always pure.
 						</p>
-						<a href="#" class="btn">Shop bar chocolate</a>
+						<a href="#" class="button">Shop bar chocolate</a>
 					</div>
 				</div> <!-- end of .card -->
 
@@ -134,7 +135,7 @@
 						<p>
 							Try our delightful blend of pan-roasted hazelnut and delicious milk chocolate.
 						</p>
-						<a href="#" class="btn">Shop snacking chocolate</a>
+						<a href="#" class="button">Shop snacking chocolate</a>
 					</div>
 				</div> <!-- end of .card -->
 
@@ -148,7 +149,7 @@
 							Made from the best cocoa beans in the world, these bars are renowned for their intense
 							flavor.
 						</p>
-						<a href="#" class="btn">Shop bar chocolate</a>
+						<a href="#" class="button">Shop bar chocolate</a>
 					</div>
 				</div> <!-- end of .card -->
 
@@ -162,7 +163,7 @@
 							We believe that chocolate is more than a snack; it's an experience, Thats why we: the rest
 							of this is cut off, not sure it matters anyways; beyond your expectation for chocolates.
 						</p>
-						<a href="#" class="btn">Shop bar chocolate</a>
+						<a href="#" class="button">Shop bar chocolate</a>
 					</div>
 				</div> <!-- end of .card -->
 			</div> <!-- end of .scroll-wrapper -->
@@ -171,6 +172,14 @@
 	<footer>
 
 		<div class="inner-container">
+			<div class="news">
+				<h3>Sign up for our newsletter</h3>
+				<p>Enter your email below to recieve news, special offers, exclusive discounts and more!</p>
+				<div>
+					<input type="text" id="email" name="email"></input>
+					<a href="#" class="button">Sign Up</a>
+				</div>
+			</div>
 			<nav>
 				<ul class="footer-menu" role="list">
 					<!-- Shop menu -->
